@@ -10,6 +10,7 @@ body {
 }
 
 #booksPara {
+    background-color: whitesmoke;
     color: olivedrab;
     font-weight: 600;
     font-size: 20px;
@@ -106,7 +107,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: olivedrab;
+    background-image: url(../library/img/annie-spratt-h-LcVG8W1XY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     font-size: 20px;
     font-weight: 600;
@@ -149,7 +152,9 @@ body {
     justify-content: space-between;
     padding: 20px;
     align-items: center;
-    background-color: olivedrab;
+    background-image: url(../library/img/joshua-bartell-6vvIBTvL90A-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #header button {
@@ -182,3 +187,45 @@ button:hover {
     color: olivedrab;
     font-size: 25px;
 }
+
+  
+  a{
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    text-decoration: none;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+  }
+  
+  a span{
+    position: relative;
+    z-index: 2;
+  }
+  
+  a:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: green;
+    transition: all .35s;
+  }
+  
+  a:hover{
+    color: #fff;
+  }
+  
+  a:hover:after{
+    width: 100%;
+  }
+  
+  
